@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.abhij.todoapp.Event_display"
+    android:orientation="vertical"
+    android:background="#616161"
+    >
+
+    <TextView
+        android:id="@+id/display_Title"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Title"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:textSize="30dp"
+        android:fontFamily="@font/butcherman"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+    <TextView
+        android:id="@+id/display_Content"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:layout_margin="20dp"
+        android:text="Content"
+        android:textColor="#000000"
+        android:fontFamily="@font/biryani_extralight"
+        android:textSize="25dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/display_comments"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:textSize="20dp"
+            android:text="Alarms:"
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-smallcaps"/>
+
+        <ListView
+            android:id="@+id/display_commentListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+    <Button
+        android:id="@+id/display_edit"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Edit"
+        android:textSize="20dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/permanent_marker"
+        android:onClick="Display_edit" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimaryDark"/>
+
+        <Button
+            android:id="@+id/display_delete"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/permanent_marker"
+            android:onClick="Display_delete"
+            android:text="Delete"
+            android:textSize="20dp" />
+    </LinearLayout>
+</LinearLayout>

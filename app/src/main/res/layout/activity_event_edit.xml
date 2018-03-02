@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.abhij.todoapp.Event_edit"
+    android:orientation="vertical"
+    android:background="#424242"
+    >
+    <!--#BDBDBD-->
+
+    <EditText
+        android:id="@+id/edit_Title"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/butcherman"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:hint="Title"
+        android:textColor="@android:color/white"
+
+        android:nextFocusDown="@id/edit_Content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+    <EditText
+        android:id="@+id/edit_Content"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/biryani_extralight"
+        android:textColor="@android:color/white"
+        android:hint="Content"
+        android:textSize="25dp"
+        android:gravity="start"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+
+        <Button
+            android:id="@+id/edit_save"
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/permanent_marker"
+            android:onClick="Edit_save"
+            android:text="Save"
+            android:background="@android:color/transparent"
+            android:textSize="20dp" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimaryDark"/>
+        <Button
+            android:id="@+id/edit_discard"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="Discard"
+            android:fontFamily="@font/permanent_marker"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:background="@android:color/transparent"
+            android:onClick="Edit_discard"/>
+    </LinearLayout>
+</LinearLayout>

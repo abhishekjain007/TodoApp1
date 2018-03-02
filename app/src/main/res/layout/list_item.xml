@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBlue"
+    >
+
+
+    <TextView
+        android:id="@+id/LText_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:gravity="center"
+        android:fontFamily="@font/butcherman"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+
+        />
+
+    <TextView
+        android:id="@+id/LText_context"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/LText_title"
+        android:fontFamily="@font/biryani_extralight"
+        android:text="Content"
+        android:paddingLeft="10dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/LButton_Delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/LText_context"
+        android:layout_below="@+id/LText_title"
+        android:layout_toRightOf="@+id/LText_context"
+        android:background="@android:color/transparent"
+        android:focusable="false"
+        android:fontFamily="@font/concert_one"
+        android:text="Delete"
+        android:textColor="#E53935"
+
+        android:textSize="20dp" />
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/LText_title"-->
+        <!--android:text="Title"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:textColor="#D50000"-->
+        <!--android:textSize="25dp"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/LText_context"-->
+        <!--android:text="context"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:textColor="#000000"-->
+        <!--android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>-->
+
+
+    <!--<Button -->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="wrap_content"-->
+        <!---->
+        <!--android:text="Delete"-->
+        <!--android:textSize="20dp"-->
+        <!--/>-->
+
+    <!--<-->
+        <!--&gt;-->
+    <!--&lt;!&ndash;<Button&ndash;&gt;-->
+        <!--android:id="@+id/edit"-->
+        <!--android:text="Edit"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--/>-->
+</RelativeLayout>
